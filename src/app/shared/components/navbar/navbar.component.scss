@@ -1,0 +1,10 @@
+@use "../../../../styles.scss" as s;
+
+.navbar {
+  @include s.glassmorph;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  align-items: center;
+}
