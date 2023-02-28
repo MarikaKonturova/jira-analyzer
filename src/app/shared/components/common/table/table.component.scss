@@ -1,0 +1,30 @@
+@use "../../../../../styles.scss" as s;
+.table {
+  width: 100%;
+  @include s.glassmorph;
+  padding: 10px 30px;
+  font-weight: 400;
+}
+.table_header {
+  width: 100%;
+
+  @include s.dflex(row, space-between, center);
+}
+.table_body {
+  width: 100%;
+
+  @include s.dflex(column, space-between, center);
+}
+.table_item {
+  width: 100%;
+  @include s.dflex(row, space-between, center);
+  p {
+    font-weight: initial;
+  }
+}
+th {
+  width: 100%;
+}
+tr {
+  margin: 10px;
+}
