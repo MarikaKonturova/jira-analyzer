@@ -26,5 +26,16 @@ th {
   width: 100%;
 }
 tr {
-  margin: 10px;
+  margin: 10px 0;
+}
+.my-pagination ::ng-deep .ngx-pagination a {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+}
+.my-pagination ::ng-deep .ngx-pagination a:hover {
+  @include s.glassmorph(0.5);
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
+  @include s.glassmorph;
 }

@@ -7,9 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class CheckboxLabelComponent {
   @Input() text = '';
-  @Output() clickEvent = new EventEmitter<boolean>();
-  click(event: MouseEvent) {
+  @Output() checkboxClick = new EventEmitter<boolean>();
+
+  onCheckboxClick(event: MouseEvent) {
     const newStatus = (event.currentTarget as HTMLInputElement).checked;
-    this.clickEvent.emit(newStatus);
+    this.checkboxClick.emit(newStatus);
   }
 }

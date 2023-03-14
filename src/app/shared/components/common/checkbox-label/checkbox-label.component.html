@@ -1,9 +1,5 @@
 <div class="form-group">
-  <input
-    type="checkbox"
-    id="{{ text }}"
-    (click)="click($event)"
-  />
+  <input type="checkbox" id="{{ text }}" (click)="onCheckboxClick($event)" />
   <label for="{{ text }}">{{ text | uppercase }}</label>
 </div>
 <!--
